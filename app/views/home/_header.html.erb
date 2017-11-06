@@ -1,2 +1,27 @@
-<%= link_to 'Main', root_path %>
-<%= link_to 'O mnie', home_about_path %>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <!-- Grupowanie "marki" i przycisku rozwijania mobilnego menu -->
+    <div class="navbar-header">
+  <%= link_to 'Rail on wiru', root_path, class: 'navbar-brand' %>
+    </div>
+ 
+    <!-- Grupowanie elementów menu w celu lepszego wyświetlania na urządzeniach moblinych -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to 'O mnie', home_about_path %></li>
+        <li><%= link_to 'Strona główna', root_path %></li>
+  <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rozwijana lista <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Akcja</a></li>
+            <li><a href="#">Inna akcja</a></li>
+            <li><a href="#">Coś jeszcze innego</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Oddzielone linki</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Jeszcze jeden oddzielony link</a></li>
+          </ul>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
