@@ -7,8 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  
+<%= render 'home/header' %> <!-- odwołanie do pliku _header --> 
+<div class="container">
 <%= yield %>
-
+</div>
 </body>
 </html>
