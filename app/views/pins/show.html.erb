@@ -1,9 +1,18 @@
+<div class="panel panel-default">
+<div class="panel-heading">
+<h1>Pin #</h1>
+</div>
+<div class=panel-body>
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Description:</strong>
+  <strong>Opis:</strong>
   <%= @pin.description %>
 </p>
+</div>
+<div class="panel-footer">
+<%= link_to 'Edytuj', edit_pin_path(@pin) %> |
+<%= link_to 'Wstecz', pins_path %>
+</div>
+</div>
 
-<%= link_to 'Edit', edit_pin_path(@pin) %> |
-<%= link_to 'Back', pins_path %>
